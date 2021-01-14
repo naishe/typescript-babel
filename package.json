@@ -1,0 +1,43 @@
+{
+  "name": "example-typescript-babel-combination",
+  "version": "1.0.0",
+  "description": "TypeScript-Babel Combination",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "check-types": "tsc",
+    "lint": "tslint --project tsconfig.json",
+    "compile": "babel src -d lib --extensions '.ts,.tsx'",
+    "prepublish": "npm run check-types && npm run compile",
+    "test": "mocha"
+  },
+  "directories": {
+    "lib": "./lib",
+    "src": "./src",
+    "test": "./test"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-typescript": "^7.12.7",
+    "@babel/register": "^7.12.10",
+    "@types/chai": "^4.2.14",
+    "@types/mocha": "^8.2.0",
+    "@typescript-eslint/eslint-plugin": "^4.13.0",
+    "@typescript-eslint/parser": "^4.13.0",
+    "chai": "^4.2.0",
+    "eslint": "^7.17.0",
+    "mocha": "^8.2.1",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-rewire": "^1.2.0"
+  }
+}
