@@ -1,5 +1,7 @@
 # TypeScript-Babel application
 
+[Mininal example for babel-plugin-rewire does not work in a Typescript project at StackOverflow](https://stackoverflow.com/questions/65725761/babel-plugin-rewire-does-not-work-in-a-typescript-project)
+
 This is a example that uses Babel to transform TypeScript to plain JavaScript, and uses TypeScript for just type-checking. It is recommended to be set via `@babel/cli`. Babel looks for `.js` files by default, but this is not configurable withn the Babel config file.
 
 ## Commands
